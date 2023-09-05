@@ -177,6 +177,7 @@ span.socal-icon {
     display: flex;
     gap: 68px;
     text-align: end;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
 }
 
 .banner02-img img {
@@ -184,7 +185,7 @@ span.socal-icon {
 }
 
 .banner02-content {
-    margin: 95px 0;
+    margin: 15px 0;
 }
 
 .banner02-head-line {
@@ -215,6 +216,92 @@ span.socal-icon {
     font-weight: 700;
 }
 
+/* games style */
+.games-container {
+    margin-top: 120px;
+    margin-bottom: 120pz;
+
+}
+
+.games-contact {
+    text-align: center;
+}
+
+.games-title {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.liner {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.games-single-card:hover {}
+
+.games-description {
+    color: #534C64;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.games-card {
+    display: flex;
+    gap: 15px;
+    margin-top: 48px;
+}
+
+.games-card img {
+    width: 100%;
+    height: 77%;
+}
+
+/* ========Downloads No Installs========== */
+
+.installs-container01 {
+    display: flex;
+    gap: 190px;
+    margin-bottom: 120px ;
+}
+
+.installs-contact {
+    margin: 80px 0px 80px 0px;
+}
+
+.installs-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #0B0223;
+}
+
+.installs-description {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.installs-banner img {
+    width: 100%;
+    height: 100%;
+}
+
+/* installs-container02 */
+.installs-container02 {
+    display: flex;
+    gap: 190px;
+    margin-bottom: 120px;
+}
+
+
+
 
 
 
@@ -232,11 +319,17 @@ span.socal-icon {
     nav,
     .nav-list,
     .banner-container,
-    .banner02-container
-     {
+    .banner02-container,
+    .games-container,
+    .games-card,
+    .installs-container01 {
         flex-direction: column;
         text-align: center;
         margin: 0px;
+    }
+
+    nav {
+        padding: 0px;
     }
 
     ul {
@@ -255,7 +348,7 @@ span.socal-icon {
     .banner-container,
     .banner-content,
     .banner02-content {
-        padding: 0px 9px;
+        padding: 0px;
         margin: 0px;
         flex-direction: column-reverse;
     }
@@ -285,8 +378,32 @@ span.socal-icon {
     .btn-rogue {
         padding: 17px 33px;
     }
+
     /* banner02 */
-    .banner02-img img{
+    .banner02-img img {
         width: 377px;
+    }
+
+    /* games style */
+    .games-container {
+        margin-top: 40px;
+    }
+
+    .liner {
+        font-size: 25px;
+    }
+
+    .games-card {
+        margin-top: 30px;
+    }
+
+    .games-card img {
+        width: 80%;
+        height: 77%;
+    }
+
+    /* installs  */
+    .installs-container01 {
+        gap: 0px;
     }
 }
