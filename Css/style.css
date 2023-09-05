@@ -44,6 +44,10 @@ nav {
     color: #F948B2;
 }
 
+.nav-list {
+    display: flex;
+}
+
 ul {
     display: flex;
 }
@@ -75,12 +79,98 @@ ul.socal-icon p {
     font-weight: 500;
 }
 
+span.socal-icon {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+}
 
 
+/* =========Banner Style=============== */
+.banner-container {
+    display: flex;
+    gap: 68px;
+}
 
+.banner-content {
+    margin: 150px 0px;
+}
 
+.banner-content h3 {
+    color: #0B0223;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 
+.banner-head-line {
+    text-align: center;
+    font-size: 95px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
+.banner-content>li {
+    list-style: none;
+    gap: 14px;
+    margin: 16px 0;
+    display: flex;
+    color: #534C64;
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
+.btn-group {
+    margin-top: 41px;
+}
+
+.btn-singIn {
+    display: inline-flex;
+    padding: 21px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 48px;
+    background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
+    border: none;
+}
+
+.btn-rogue {
+    display: inline-flex;
+    padding: 21px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 48px;
+    background: #4EC5F7;
+    border: none;
+}
+
+.btn-singIn a {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn-rogue a {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.banner-img img {
+    height: 85%;
+}
 
 
 
@@ -88,11 +178,11 @@ ul.socal-icon p {
 
 /* responsive style */
 @media screen and (max-width:570px) {
-    nav {
+    nav, .nav-list, .banner-container {
         flex-direction: column;
         text-align: center;
-        padding: 50px 0px;
     }
+
     ul {
         display: flex;
         gap: 17px;
@@ -100,8 +190,33 @@ ul.socal-icon p {
         flex-direction: column;
         margin-bottom: 15px;
     }
-    span.socal-icon{
+  
+    span.socal-icon {
         display: flex;
         gap: 10px;
+    }
+    .banner-container, .banner-content {
+        padding: 0px 9px;
+        margin: 0px;
+        flex-direction: column-reverse;
+    }
+    .banner-content> h3{
+        font-size: 46px;
+    }
+    .banner-head-line{
+        font-size: 92px;
+    }
+    .banner-content> li{
+        font-size: 18px;
+    }
+    .banner-img img{
+        width: 250px;
+    }
+    .btn-group{
+        display: flex;
+        gap: 15px;
+    }
+    .btn-singIn, .btn-rogue {
+        padding: 17px 33px;
     }
 }
